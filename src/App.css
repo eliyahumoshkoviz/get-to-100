@@ -1,0 +1,53 @@
+body {
+  text-align: center;
+}
+.App {}
+#players {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 600px;
+  height: 250px;
+}
+#player {
+  margin-top: 30px;
+  margin-left: auto;
+  border: 5px solid black;
+  margin-right: auto;
+  text-align: center;
+  width: 185px;
+  height: 250px;
+  background: linear-gradient(to right, hsl(51, 100%, 50% ,0.7), hsl(39, 100%, 50%,0.9), hsl(51, 100%, 50%,0.7));
+}
+#fullName {
+  margin: 15px;
+}
+#welcom {
+  font-size: 30px;
+  font-weight: 900;
+}
+#logo {
+  background: linear-gradient(to right, #FFD700, #FFA500, #FFD700);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 50px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+@keyframes changeWidth {
+  0%, 100% { width: 500px; }
+  50% { width: 0; }
+}
+#underLine {
+  width: 100%;
+  height: 5px;
+  animation: changeWidth 5s infinite alternate;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
