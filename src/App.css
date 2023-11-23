@@ -1,7 +1,9 @@
 body {
   text-align: center;
 }
-.App {}
+
+/* .App {} */
+
 #players {
   display: grid;
   grid-template-columns: auto auto;
@@ -14,6 +16,7 @@ body {
   max-width: 600px;
   height: 250px;
 }
+
 #player {
   margin-top: 30px;
   margin-left: auto;
@@ -21,16 +24,19 @@ body {
   margin-right: auto;
   text-align: center;
   width: 185px;
-  height: 250px;
-  background: linear-gradient(to right, hsl(51, 100%, 50% ,0.7), hsl(39, 100%, 50%,0.9), hsl(51, 100%, 50%,0.7));
+  min-height: 250px;
+  background: linear-gradient(to right, #FFD900, #FFA500, #FFD700);
 }
+
 #fullName {
   margin: 15px;
 }
+
 #welcom {
   font-size: 30px;
   font-weight: 900;
 }
+
 #logo {
   background: linear-gradient(to right, #FFD700, #FFA500, #FFD700);
   -webkit-background-clip: text;
@@ -39,10 +45,19 @@ body {
   font-weight: 900;
   margin-top: 10px;
 }
+
 @keyframes changeWidth {
-  0%, 100% { width: 500px; }
-  50% { width: 0; }
+
+  0%,
+  100% {
+    width: 500px;
+  }
+
+  50% {
+    width: 0;
+  }
 }
+
 #underLine {
   width: 100%;
   height: 5px;
@@ -50,4 +65,36 @@ body {
   background-color: black;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
+}
+
+#lineBorder {
+  position: fixed;
+  bottom: 0px;
+  background: linear-gradient(to right, #FFD700, #FFA500, #FFD700);
+  width: 100%;
+  height: 15px;
+}
+
+.boredrsBottom {
+  position: fixed;
+  bottom: 0px;
+  background: linear-gradient(to right, #FFD700, #FFA500, #FFD700);
+  width: 5%;
+  height: 15px;
+}
+
+#leftBorder {
+  left: 0;
+}
+
+#rightBorder {
+  right: 0;
+}
+.panel{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+  
 }
